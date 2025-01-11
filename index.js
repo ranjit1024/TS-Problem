@@ -1,5 +1,9 @@
 "use strict";
-function Sum(a, b) {
-    return a + b;
+function isLegal(age) {
+    if (age >= 18) {
+        return true;
+    }
+    return false;
 }
-console.log(Sum(12, 12));
+const deivingLicence = isLegal(90);
+console.log(deivingLicence);

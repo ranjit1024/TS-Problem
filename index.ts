@@ -1,5 +1,9 @@
-function Sum(a: number, b: number): number {
-    return a + b;
+function isLegal(age: number): boolean {
+    if (age >= 18) {
+        return true
+    }
+    return false
 }
 
-console.log(Sum(12, 12)) 
+const deivingLicence: boolean = isLegal(90)
+console.log(deivingLicence)
