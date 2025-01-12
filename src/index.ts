@@ -66,3 +66,35 @@ class Studnet implements Person {
 const s1 = new Studnet("ranjit", 12);
 s1.greet("h1")
 //
+
+
+//Types
+
+type GreetingType = number | string;
+
+function greet1(name: GreetingType) {
+    console.log(name);
+}
+
+type student = {
+    name: string,
+    age: number;
+}
+
+type teacher = {
+    name: string,
+    id: number,
+}
+
+type company = student & teacher;
+const company1: company = {
+    name: 'ranmjit',
+    id: 1,
+    age: 32,
+}
+
+//done
+
+const prime: number[] = [2, 3, 5, 7, 11, 13];
+
+console.log(prime)
