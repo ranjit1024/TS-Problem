@@ -12,4 +12,24 @@ const doSomething = (a) => {
     console.log("Hello");
     return a;
 };
-console.log(doSomething(12));
+function isLegalAnother(user) {
+    if (user.age > 18) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+function Greet(user) {
+    console.log("Hello " + user.firstName);
+}
+Greet({
+    firstName: 'ranjit',
+    lastName: 'das',
+    age: 12
+});
+console.log(isLegalAnother({
+    firstname: 'ranjit',
+    lastName: 'das',
+    age: 12
+}));
