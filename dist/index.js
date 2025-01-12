@@ -1,35 +1,22 @@
 "use strict";
-function isLegal(age) {
-    if (age >= 18) {
-        return true;
-    }
-    return false;
+const a = 12;
+console.log(a);
+function Greet(username) {
+    console.log(`hello ${username}`);
 }
-function runafter1S(func) {
-    setTimeout(func, 1000);
-}
-const doSomething = (a) => {
-    console.log("Hello");
-    return a;
-};
-function isLegalAnother(user) {
-    if (user.age > 18) {
+function isAdult(age) {
+    if (age > 12) {
         return true;
     }
     else {
         return false;
     }
 }
-function Greet(user) {
-    console.log("Hello " + user.firstName);
+function user(userdata) {
+    console.log(userdata);
 }
-Greet({
-    firstName: 'ranjit',
-    lastName: 'das',
-    age: 12
+const user1 = user({
+    name: "ranjit",
+    age: 12,
+    gay: true
 });
-console.log(isLegalAnother({
-    firstname: 'ranjit',
-    lastName: 'das',
-    age: 12
-}));

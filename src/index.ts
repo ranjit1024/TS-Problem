@@ -1,20 +1,46 @@
-// #frist create a age checking funciton
-function isLegal(age: number): boolean {
-    if (age >= 18) {
+// providig type to veriable for strict checking
+const a: number = 12;
+console.log(a)
+//done
+
+
+//giving type to the arguments in functinon
+function Greet(username: string) {
+    console.log(`hello ${username}`)
+}
+//
+
+
+//giving type to the return value of function
+function isAdult(age: number): boolean {
+    if (age > 12) {
         return true
     }
-    return false
+    else {
+        return false;
+    }
+}
+//done
+
+
+//passing object in a fuction
+interface User {
+    name: string,
+    age: number,
+    gay: boolean
 }
 
-// #Cteate a functin which takes another function as argumnet
-
-function runafter1S(func: () => void) {
-    setTimeout(func, 1000);
+function user(userdata: User) {
+    console.log(userdata);
 }
 
-const doSomething: (a: number) => void = (a) => {
-    console.log("Hello");
-    return a;
-}
+const user1 = user({
+    name: "ranjit",
+    age: 12,
+    gay: true
+})
 
-console.log(doSomething(12))
+
+//done
+
+
