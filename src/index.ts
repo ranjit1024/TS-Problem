@@ -39,8 +39,30 @@ const user1 = user({
     age: 12,
     gay: true
 })
-
-
 //done
 
 
+// implenting interface in class so that we can have more sctict checking
+interface Person {
+    name: string,
+    age: number,
+    greet(phress: string): void;
+}
+
+class Studnet implements Person {
+    name: string;
+    age: number;
+
+    constructor(n: string, a: number) {
+        this.name = n;
+        this.age = a;
+    }
+
+    greet(phress: string): void {
+        console.log(`${phress} ${this.name}`)
+    }
+}
+
+const s1 = new Studnet("ranjit", 12);
+s1.greet("h1")
+//

@@ -20,3 +20,14 @@ const user1 = user({
     age: 12,
     gay: true
 });
+class Studnet {
+    constructor(n, a) {
+        this.name = n;
+        this.age = a;
+    }
+    greet(phress) {
+        console.log(`${phress} ${this.name}`);
+    }
+}
+const s1 = new Studnet("ranjit", 12);
+s1.greet("h1");
